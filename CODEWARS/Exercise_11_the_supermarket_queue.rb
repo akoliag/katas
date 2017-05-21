@@ -17,12 +17,6 @@ def queue_time(customers, n)
   return counter - 1
 end
 
-
-
 def are_queues_empty?(queues)
     queues.all? {|num| num == 0}
 end
-queues_test = [3, 4, 1, 5]
-
-p queue_time(queues_test, 2)
-p are_queues_empty?(queues_test)
