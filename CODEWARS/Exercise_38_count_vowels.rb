@@ -1,10 +1,10 @@
 # https://www.codewars.com/kata/vowel-count/train/ruby
 def getCount(inputStr)
-  vowel_size = ""
+  vowels = ""
   inputStr.each_char do |char|
     if char =~ /[aeiou]/
-      vowel_size << char
+      vowels << char
     end
   end
-  return vowel_size.size
+  return vowels.size
 end
