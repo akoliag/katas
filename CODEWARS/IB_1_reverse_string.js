@@ -41,3 +41,12 @@ function reverse4(str) {
 }
 
 console.log(reverse4('a little bit more complicated'));
+
+//Option 4 refactoring:
+
+function reverse5(str) {
+  debugger;
+ return str.split('').reduce((rev, char) => char + rev, '');
+}
+
+console.log(reverse5('option refactoring'));
