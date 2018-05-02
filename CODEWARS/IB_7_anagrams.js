@@ -3,6 +3,7 @@
 //quantity. Only consider characters, not spaces or punctuaction. Consider
 //capital letters to be the same as lower case.
 
+//option 1:
 
 function anagrams(stringA, stringB) {
   const aCharMap = buildCharMap(stringA);
@@ -34,3 +35,14 @@ console.log(anagrams("aga", "AGA"));
 //from the string
 
 console.log(buildCharMap('anagram'));
+
+//option 2:
+
+function anagrams1(stringA, stringB) {
+  return cleanString(stringA) === cleanString(stringB);
+}
+
+function cleanString(str) {
+  return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+}
+console.log(anagrams1('rail safety', 'fairy tales'));
