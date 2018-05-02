@@ -46,3 +46,5 @@ function cleanString(str) {
   return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
 }
 console.log(anagrams1('rail safety', 'fairy tales'));
+
+//we can use .sort() not only with numbers but with characters as well
