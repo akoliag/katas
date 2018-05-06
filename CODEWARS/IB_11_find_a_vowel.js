@@ -27,3 +27,13 @@ function vowelsCount1(str) {
 }
 
 console.log(vowelsCount1('Agnieszka'));
+
+
+//option 3:
+function vowelsCount2(str) {
+  const matches = str.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
+}
+//if match does not find the value returns null
+//i in regex means case insensitive
+console.log(vowelsCount2('Ewa'));
