@@ -34,7 +34,15 @@ function matrix(n) {
       counter++;
     }
     endRow--;
+
+    //start column
+    for (let i = endRow; i >= startRow; i--) {
+      results[i][startColumn] = counter;
+      counter++;
+    }
+    startColumn++;
   }
+  return results;
 }
 
 console.log(matrix(5));
