@@ -20,6 +20,12 @@ function matrix(n) {
       counter++;
     }
     startRow++;
+
+    //Right column
+    for (let i = startRow; i <= endRow; i++) {
+      results[i][endColumn] = counter;
+      counter++;
+    }
   }
 }
 
