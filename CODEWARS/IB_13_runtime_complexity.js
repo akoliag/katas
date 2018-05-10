@@ -31,4 +31,12 @@ every other element. The 'handshake problem'
 Exponential Time - 2^n ---> If we add a *single* element to a collection,
 the processing power required doubles
 
+
+Big 'O' Notation:
+
+O(n) ---> Linear
+O(1) ---> Constant
+O(n^2) ---> Quadratic
+
+Space Complexity - how much more memory is required by doubling the problem set?
 */
