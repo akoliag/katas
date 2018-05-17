@@ -4,6 +4,7 @@
 //For example:
 //[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
+//Iterative solution:
 function fib(n) {
   const result = [0, 1];
 
@@ -13,7 +14,18 @@ function fib(n) {
 
     result.push(a + b);
   }
-return result;
+return result[n];
 }
 
 console.log(fib(6));
+
+//Recursive solution:
+
+function fib1(n) {
+  if (n < 2) {
+    return n;
+  }
+  return fib1(n - 1) + fib1(n - 2);
+}
+
+console.log(fib1(7));
