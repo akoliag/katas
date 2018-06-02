@@ -9,3 +9,27 @@ Enqueuing (adding) - the process of adding a record into a queue
 Dequeuing (removing) - taking sth out the queue
 
 Queue follows First-in-First out principle (F-I-F-O).
+
+Task:
+Create a queue data structure. The queue should be a class with methods 'add'
+and 'remove'. Adding to the queue should store an element until it is removed.
+
+---Examples---
+const q = new Queue();
+q.add(1);
+q.remove(); //returns 1;
+
+*/
+class Queue {
+  constructor() {
+    this.data = [];
+  }
+
+  add(record) {
+    this.data.unshift(record);//adding elem at the beginning of the queue
+  }
+  
+  remove() {
+    return this.data.pop();
+  }
+}
